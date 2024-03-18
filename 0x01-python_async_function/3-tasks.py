@@ -1,0 +1,19 @@
+#!/usr/bin/env python3
+"""
+Python Async
+"""
+import asyncio
+
+wait_random = __import__("0-basic_async_syntax").wait_random
+
+
+def task_wait_random(max_delay: int):
+    """
+    Function to create an async task
+
+    args:
+        max_delay: maximu time foe delay
+
+    return: create async task
+    """
+    return asyncio.create_task(wait_random(max_delay))

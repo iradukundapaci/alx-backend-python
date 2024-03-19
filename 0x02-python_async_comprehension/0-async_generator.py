@@ -7,7 +7,7 @@ from typing import AsyncGenerator
 import random
 
 
-async def async_generator() -> AsyncGenerator[float, float]:
+async def async_generator() -> AsyncGenerator[float, None]:
     """
     Function that creates async generator
 
